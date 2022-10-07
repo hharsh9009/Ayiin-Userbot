@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/93a0567ef9d7d2a9ced42.png">
+  <img src="https://telegra.ph/file/7cde10ddb899d1bf08600.png">
 </p>
 
 
