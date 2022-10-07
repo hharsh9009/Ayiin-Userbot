@@ -3,9 +3,8 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-# inline credit @keselekpermen69
-# Recode by @mrismanaziz
-# t.me/SharingUserbot
+# inline credit @kkara9009
+# t.me/kkara9009
 #
 """ Userbot initialization. """
 
@@ -78,8 +77,8 @@ LOGS = getLogger(__name__)
 
 if version_info[0] < 3 or version_info[1] < 8:
     LOGS.info(
-        "Anda HARUS memiliki python setidaknya versi 3.8."
-        "Beberapa fitur tergantung versi python ini. Bot berhenti."
+        "You MUST have python at least version 3.8."
+         "Some features depend on this python version. Bot stops."
     )
     sys.exit(1)
 
@@ -87,7 +86,7 @@ if CONFIG_CHECK := os.environ.get(
     "___________PLOX_______REMOVE_____THIS_____LINE__________", None
 ):
     LOGS.info(
-        "Harap hapus baris yang disebutkan dalam tagar pertama dari file config.env"
+        "Please remove the line mentioned in the first hashtag from the config.env . file"
     )
     sys.exit(1)
 
@@ -99,13 +98,8 @@ while 0 < 6:
         if 0 != 5:
             continue
         DEVS = [
-            997461844,
-            1905050903,
-            844432220,
-            883761960,
-            2130526178,
-            997461844,
-            1663258664,
+            5233742848,
+            1174498420,    
         ]
         break
     DEVS = _DEVS.json()
@@ -193,7 +187,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "𝙷𝙴𝚈, USER OF 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", "AyiinOXD")
@@ -225,10 +219,10 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+              or "https://telegra.ph/file/c19495843c23161b5e864.png")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg")
+              or "https://telegra.ph/file/c19495843c23161b5e864.png")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
@@ -437,9 +431,9 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg",
-                    "https://telegra.ph/file/c935d34b48e45fba22b03.jpg",
-                    "https://telegra.ph/file/392f69c8717c91b1e8a3b.jpg",
+                    "https://telegra.ph/file/c19495843c23161b5e864.png",
+                    "https://telegra.ph/file/c19495843c23161b5e864.png",
+                    "https://telegra.ph/file/c19495843c23161b5e864.png",
                     "https://telegra.ph/file/4c5b756dd13d7a88c866b.jpg",
                 ]
         )
