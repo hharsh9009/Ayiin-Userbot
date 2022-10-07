@@ -674,7 +674,7 @@ with bot:
                 result = builder.article(
                     title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
                     description="Ayiin - Userbot | Telethon",
-                    url="https://t.me/AyiinSupport",
+                    url="https://t.me/AyiinOXDSupport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -770,14 +770,14 @@ with bot:
                         pass
 
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
-                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
+                await event.answer(reply_popMenu• - Voice chat group for_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"inline_yins"))
         async def about(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 await event.edit(f"""
-•Menu• - Voice chat group untuk [{user.first_name}](tg://user?id={user.id})
+•Menu• - Voice chat group for [{user.first_name}](tg://user?id={user.id})
 """,
                                  buttons=[
                                      [
@@ -790,7 +790,7 @@ with bot:
                                  ]
                                  )
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
