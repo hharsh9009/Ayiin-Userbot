@@ -802,31 +802,31 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah yang tersedia di vcplugin** ✘
+✘ **Commands available in vcplugin**
 
-  »  **Perintah : **`{cmd}play` <Judul Lagu/Link YT>
-  »  **Kegunaan :** __Untuk Memutar Lagu di voice chat group dengan akun kamu.__
+  » **Command : **`{cmd}play` <Song Title/YT Link>
+  » **Usage :** __To Play Songs in voice chat groups with your account.__
 
-  »  **Perintah : **`{cmd}vplay` <Judul Video/Link YT>
-  »  **Kegunaan :** __Untuk Memutar Video di voice chat group dengan akun kamu.__
+  » **Command : **`{cmd}vplay` <Video Title/YT Link>
+  » **Usage :** __To Play Video in voice chat group with your account.__
 
-  »  **Perintah : **`{cmd}end`
-  »  **Kegunaan :** __Untuk Memberhentikan video/lagu yang sedang putar di voice chat group.__
+  » **Command : **`{cmd}end`
+  » **Usage:** __To stop the video/song currently playing in the voice chat group.__
 
-  »  **Perintah : **`{cmd}skip`
-  »  **Kegunaan :** __Untuk Melewati video/lagu yang sedang di putar.__
+  » **Command : **`{cmd}skip`
+  » **Usage :** __To Skip the video/song that is currently playing.__
 
-  »  **Perintah : **`{cmd}pause`
-  »  **Kegunaan :** __Untuk memberhentikan video/lagu yang sedang diputar.__
+  » **Command : **`{cmd}pause`
+  » **Usage :** __To stop the currently playing video/song.__
 
-  »  **Perintah : **`{cmd}resume`
-  »  **Kegunaan :** __Untuk melanjutkan pemutaran video/lagu yang sedang diputar.__
+  » **Command : **`{cmd}resume`
+  » **Usage :** __To continue playing the currently playing video/song.__
 
-  »  **Perintah : **`{cmd}volume` 1-200
-  »  **Kegunaan :** __Untuk mengubah volume (Membutuhkan Hak admin).__
+  » **Command : **`{cmd}volume` 1-200
+  » **Usage :** __To change volume (Requires admin rights).__
 
-  »  **Perintah : **`{cmd}playlist`
-  »  **Kegunaan :** __Untuk menampilkan daftar putar Lagu/Video.__
+  » **Command : **`{cmd}playlist`
+  » **Usage :** __To display playlist of Songs/Videos.__
 """)
                 await event.edit(
                     text,
@@ -834,7 +834,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -846,25 +846,25 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah yang tersedia di vctools** ✘
+✘ **Commands available in vctools**
 
-  »  **Perintah : **`{cmd}startvc`
-  »  **Kegunaan :** __Untuk Memulai voice chat group.__
+   » **Command : **`{cmd}startvc`
+   » **Usage :** __To start a voice chat group.__
 
-  »  **Perintah : **`{cmd}stopvc`
-  »  **Kegunaan :** __Untuk Memberhentikan voice chat group.__
+   » **Command : **`{cmd}stopvc`
+   » **Usage :** __To stop group voice chat.__
 
-  »  **Perintah :** `{cmd}joinvc` atau `{cmd}joinvc` <chatid/username gc>
-  »  **Kegunaan :** __Untuk Bergabung ke voice chat group.__
+   » **Command :** `{cmd}joinvc` or `{cmd}joinvc` <chatid/username gc>
+   » **Usage :** __To join a voice chat group.__
 
-  »  **Perintah : **`{cmd}leavevc` atau `{cmd}leavevc` <chatid/username gc>
-  »  **Kegunaan :** __Untuk Turun dari voice chat group.__
+   » **Command : **`{cmd}leavevc` or `{cmd}leavevc` <chatid/username gc>
+   » **Usage :** __To get off the voice chat group.__
 
-  »  **Perintah : **`{cmd}vctitle` <title vcg>
-  »  **Kegunaan :** __Untuk Mengubah title/judul voice chat group.__
+   » **Command : **`{cmd}vctitle` <title vcg>
+   » **Usage :** __To change the title of the voice chat group.__
 
-  »  **Perintah : **`{cmd}vcinvite`
-  »  **Kegunaan :** __Mengundang Member group ke voice chat group.__
+   » **Command : **`{cmd}vcinvite`
+   » **Usage :** __Inviting group members to voice chat group.__
 """)
                 await event.edit(
                     text,
@@ -872,7 +872,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="inline_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"konten_yins"))
@@ -892,7 +892,7 @@ with bot:
                                  ]
                                  )
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -927,7 +927,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="konten_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
