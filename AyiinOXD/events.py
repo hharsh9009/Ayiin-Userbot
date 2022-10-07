@@ -206,20 +206,20 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**✘ AYIIN-USERBOT ERROR REPORT ✘**\n\n"
+                    text = "**✘ AYIIN-USERBOT ERROR REPORT **\n\n"
                     link = "[Group Support](https://t.me/AyiinOXDSupport)"
-                    text += "Jika mau, Anda bisa melaporkan error ini, "
-                    text += f"Cukup forward saja pesan ini ke {link}.\n\n"
+                    text += "If you wish, you can report this error,"
+                    text += f"Just forward this message to {link}.\n\n"
 
-                    ftext = "========== DISCLAIMER =========="
-                    ftext += "\nFile ini HANYA diupload di sini,"
-                    ftext += "\nkami hanya mencatat fakta error dan tanggal,"
-                    ftext += "\nkami menghormati privasi Anda."
-                    ftext += "\nJika mau, Anda bisa melaporkan error ini,"
-                    ftext += "\ncukup forward saja pesan ini ke @AyiinOXDSupport"
+                    ftext = "========== DISCLAIMER ===========
+                    ftext += "\nThis file is ONLY uploaded here,"
+                    ftext += "\nWe only record error facts and dates,"
+                    ftext += "\nWe respect your privacy."
+                    ftext += "\nIf you wish, you can report this error,"
+                    ftext += "\nJust forward this message to @AyiinOXDSupport"
                     ftext += "\n================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
-                    ftext += "\nTanggal : " + date
+                    ftext += "\nDate : " + date
                     ftext += "\nChat ID : " + str(check.chat_id)
                     ftext += "\nUser ID : " + str(check.sender_id)
                     ftext += "\n\nEvent Trigger:\n"
@@ -232,7 +232,7 @@ def register(**args):
 
                     command = 'git log --pretty=format:"%an: %s" -10'
 
-                    ftext += "\n\n\n10 commits Terakhir:\n"
+                    ftext += "\n\n\n10 Last commits:\n"
 
                     process = await asyncsubshell(
                         command, stdout=asyncsub.PIPE, stderr=asyncsub.PIPE
@@ -246,7 +246,7 @@ def register(**args):
                     with open("error.log", "w+") as file:
                         file.write(ftext)
 
-        if bot:
+        if bots:
             if not disable_edited:
                 bot.add_event_handler(wrapper, events.MessageEdited(**args))
             bot.add_event_handler(wrapper, events.NewMessage(**args))
