@@ -27,7 +27,7 @@ Use this bot at your own risk, and use this userbot wisely.
 <summary><b>🔗 String Session</b></summary>
 <br>
     
-> Anda memerlukan API_ID & API_HASH untuk menghasilkan sesi telethon. ambil APP ID dan API Hash di my.telegram.org
+
 <h4> Generate Session via Repl: </h4>    
 <p><a href="https://repl.it/@AellyXD/AyiinString?lite=1&outputonly=1"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
 <h4> Generate Session via Telegram StringGen Bot: </h4>    
