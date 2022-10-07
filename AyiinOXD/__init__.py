@@ -687,8 +687,8 @@ with bot:
                                 "ɢʀᴏᴜᴘ",
                                 "https://t.me/AyiinOXDSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinOXD/Ayiin-Userbot"),
+                                "Owner",
+                                "https://t.me/AyiinOXD"),
                         ],
                     ],
                     link_preview=False,
@@ -711,7 +711,7 @@ with bot:
                 await event.edit(buttons=buttons)
             else:
                 reply_pop_up_alert = (
-                    f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+                    f"You are not allowed, this is Userbot Owned {owner}"
                 )
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -721,8 +721,8 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
-                # https://t.me/TelethonChat/115200
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @kkara9009
+                # https://t.me/kkara9009
                 await event.edit(
                     file=logoyins,
                     link_preview=True,
@@ -734,8 +734,8 @@ with bot:
             )
         )
         async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
-                # https://t.me/TelethonChat/115200
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @kkara9009
+                # https://t.me/kkara9009
                 text = (
                     f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
