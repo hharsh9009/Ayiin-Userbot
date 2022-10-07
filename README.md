@@ -66,15 +66,10 @@ Use this bot at your own risk, and use this userbot wisely.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/AellyOfficial/AellyXD"><img src="https://img.shields.io/badge/Deploy with-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/AyiinOXD/Ayiin-Userbot"><img src="https://img.shields.io/badge/Deploy with-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
-<details>
-<summary><b>🔗 Deploy To Bot Heroku</b></summary>
-<br>
-
-<p><a href="https://telegram.dog/XTZ_HerokuBot?start=QXlpaW5YZC9BeWlpbi1Vc2VyYm90IEF5aWluLVVzZXJib3Q"><img src="https://img.shields.io/badge/BUAT DI -BOT HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" height="45" /></a></p>
 
 </details>
 
@@ -85,6 +80,4 @@ You can contact for any help with Owners...
 -  [Karan](https://github.com/kkara9009) : ProjectBish
 -  [Ananya](https://github.com/anunicn47) : Paperplane
 
-## License
-Licensed under [Raphielscape Public License](https://github.com/AellyOfficial/AellyXD/blob/Ayiin-Userbot/LICENSE) - Version 1.d, September2022
 
