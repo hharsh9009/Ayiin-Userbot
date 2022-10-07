@@ -564,23 +564,23 @@ with bot:
                 )
             elif query.startswith("repo"):
                 result = builder.article(
-                    title="Repository",
-                    description="Repository Ayiin - Userbot",
-                    url="https://t.me/AyiinOXDSupport",
+                    title="Owner",
+                    description="Ayiin - Userbot",
+                    url="https://t.me/kkara9009",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinOXD](https://t.me/AyiinOXD)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinOXDSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinOXD/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [KaranRaj](https://t.me/kkara9009)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinOXDSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinOXD/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinOXDSupport"),
+                                "Ananya",
+                                "https://t.me/an_unic_or_n47"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinOXD/Ayiin-Userbot"),
+                                "Karan",
+                                "https://t.me/kkara9009"),
                         ],
                     ],
                     link_preview=False,
@@ -600,7 +600,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "Bᴏᴛ Sᴛʀɪɴɢ",
-                                url="https://t.me/AyiinStringRobot?start="),
+                                url="https://t.me/AyiinOXDStringRobot?start="),
                             custom.Button.url(
                                 "Sᴛʀɪɴɢ Rᴇᴘʟɪᴛ",
                                 url="https://repl.it/@AyiinOXD/AyiinString?lite=1&outputonly=1"),
