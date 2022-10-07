@@ -1,11 +1,5 @@
  <h1 align="center">✨ 𝘼𝙮𝙞𝙞𝙣 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ✨</h1>
 
-<a href="https://github.com/AyiinOXD/Ayiin-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/AyiinOXD/Ayiin-Userbot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinOXD/Ayiin-Userbot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/AyiinOXD/Ayiin-Userbot/graphs/commit-activity)
-[![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/AyiinOXD/Ayiin-Userbot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/AyiinOXD/Ayiin-Userbot?&logo=github)](https://github.com/AyiinOXD/Ayiin-Userbot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/AyiinOXD/Ayiin-Userbot?&logo=github)](https://github.com/AyiinOXD/Ayiin-Userbot/stargazers)
 
 
 <p align="center">
