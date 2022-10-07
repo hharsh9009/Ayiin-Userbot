@@ -939,10 +939,10 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah yang tersedia di yins bokep** ✘
+✘ **Commands available on yins bokep**
 
-  »  **Perintah : **`{cmd}bokp`
-  »  **Kegunaan :** __Untuk Mengirim bokp secara random.__
+   » **Command : **`{cmd}bokp`
+   » **Usage :** __To send bokp randomly.__
 """)
                 await event.edit(
                     text,
@@ -950,7 +950,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="konten_yins")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -962,13 +962,13 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah yang tersedia di tools** ✘
+✘ **Commands available in tools**
 
-  »  **Perintah :** `{cmd}lang`
-  »  **Kegunaan : **Untuk Mengubah Bahasa.
+   » **Command :** `{cmd}lang`
+   » **Usage: **To Change Language.
 
-  »  **Perintah :** `{cmd}string`
-  »  **Kegunaan : **Untuk Membuat String Session.
+   » **Command :** `{cmd}string`
+   » **Usage: **To Create String Session.
 """)
                 await event.edit(
                     text,
@@ -976,7 +976,7 @@ with bot:
                     link_preview=True,
                     buttons=[Button.inline("ʙᴀᴄᴋ", data="gcback")])
             else:
-                reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
+                reply_pop_up_alert = f"❌ DISCLAIMER \n\nYou have no right to press these buttons"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.CallbackQuery(data=b"close"))
@@ -1008,7 +1008,7 @@ with bot:
                     current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+                reply_pop_up_alert = f"You are not allowed, this is Userbot Owned {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
@@ -1023,7 +1023,7 @@ with bot:
                         .replace("`", "")
                         .replace("**", "")[:950]
                         + "..."
-                        + f"\n\nBaca Teks Berikutnya Ketik {cmd}help "
+                        + f"\n\nRead Next Text Type {cmd}help "
                         + modul_name
                         + " "
                     )
@@ -1034,7 +1034,7 @@ with bot:
                 reply_pop_up_alert = (
                     help_string
                     if help_string is not None
-                    else "{} Tidak ada dokumen yang telah ditulis untuk modul.".format(
+                    else "{} No documents have been written for the module.".format(
                         modul_name
                     )
                 )
@@ -1044,9 +1044,9 @@ with bot:
                 )
 
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+                reply_pop_up_alert = f"You are not allowed, this is Userbot Owned {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @AyiinOXDSupport » TAG @admin » Info By: Ayiin-Userbot {BOT_VER}")
+          f"IF YOUR BOT IS NGECRASH, CLICK SAVE IN THE BOTTOM RIGHT CORNER AND SEND TO @AyiinOXDSupport » TAG @admin » Info By: Ayiin-Userbot {BOT_VER}")
