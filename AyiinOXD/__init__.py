@@ -475,7 +475,7 @@ with bot:
                     if BOTLOG:
                         await event.client.send_message(
                             BOTLOG_CHATID,
-                            f"**ERROR:** Saat menyimpan detail pesan di database\n`{str(e)}`",
+                            f"**ERROR:** When saving message details in database\n`{str(e)}`",
                         )
             else:
                 if event.text.startswith("/"):
@@ -509,7 +509,7 @@ with bot:
                             )
                     except UserIsBlockedError:
                         return await event.reply(
-                            "❌ **Bot ini diblokir oleh pengguna.**"
+                            "❌ **This user is blocked by bot.**"
                         )
                     except Exception as e:
                         return await event.reply(f"**ERROR:** `{e}`")
@@ -526,7 +526,7 @@ with bot:
                         if BOTLOG:
                             await event.client.send_message(
                                 BOTLOG_CHATID,
-                                f"**ERROR:** Saat menyimpan detail pesan di database\n`{e}`",
+                                f"**ERROR:** When saving message details in database\n`{e}`",
                             )
 
         @tgbot.on(
@@ -545,7 +545,7 @@ with bot:
                     link_preview=False,
                 )
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
+                reply_pop_up_alert = f"You are not allowed, this is Userbot Owned {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.InlineQuery)
@@ -572,7 +572,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [KaranRaj](https://t.me/kkara9009)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinOXDSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinOXD/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [KaranRaj](https://t.me/kkara9009)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinOXDSupport\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Karan](https://t.me/kkara9009)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -603,7 +603,7 @@ with bot:
                                 url="https://t.me/AyiinOXDStringRobot?start="),
                             custom.Button.url(
                                 "Sᴛʀɪɴɢ Rᴇᴘʟɪᴛ",
-                                url="https://repl.it/@AyiinOXD/AyiinString?lite=1&outputonly=1"),
+                                url="https://replit.com/@anunicn47/AyiinOXDString"),
                         ],
                         [
                             custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AyiinOXDSupport"),
