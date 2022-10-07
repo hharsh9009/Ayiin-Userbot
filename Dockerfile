@@ -4,7 +4,7 @@
 
 FROM ayiinoxd/ayiin-userbot:buster
 
-RUN git clone -b Ayiin-Userbot https://github.com/AyiinOXD/Ayiin-Userbot /home/ayiinuserbot/ \
+RUN git clone -b Ayiin-Userbot https://github.com/AyiinXD/Ayiin-Userbot /home/ayiinuserbot/ \
     && chmod 777 /home/ayiinuserbot \
     && mkdir /home/ayiinuserbot/bin/
 
