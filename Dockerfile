@@ -1,8 +1,8 @@
 #==============×==============#
-#      Created by: Alfa-Ex
+#      Created by: Ayiin
 #=========× AyiinXd ×=========#
 
-FROM ayiinxd/ayiin-userbot:buster
+FROM ayiinoxd/ayiin-userbot:buster
 
 RUN git clone -b Ayiin-Userbot https://github.com/AyiinOXD/Ayiin-Userbot /home/ayiinuserbot/ \
     && chmod 777 /home/ayiinuserbot \
