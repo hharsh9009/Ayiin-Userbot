@@ -66,7 +66,7 @@ Use this bot at your own risk, and use this userbot wisely.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/AyiinOXD/Ayiin-Userbot"><img src="https://img.shields.io/badge/Deploy with-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/AyiinOXD/DeployAyiin"><img src="https://img.shields.io/badge/Deploy with-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
