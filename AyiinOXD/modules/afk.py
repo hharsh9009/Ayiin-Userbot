@@ -1,6 +1,6 @@
-# Copyright (C) 2020 TeamUltroid
-# Ported by X_ImFine
-# Recode by @mrismanaziz
+# Copyright (C) 2022 AellyOXD
+# Ported by Ayiin
+# Recode by @AyiinOXD
 
 import asyncio
 from datetime import datetime
