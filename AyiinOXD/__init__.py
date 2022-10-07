@@ -904,22 +904,22 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah Yang Tersedia Di btpm** ✘
+✘ **Available Commands in the bot cmd menu** ✘
 
-  »  **Perintah : **`{cmd}btpm` <username ch>
-  »  **Kegunaan :** __Untuk Mendapatkan List Btpm Kosong.__
+  » **Order : **`{cmd}btpm` <username ch>
+   » **Usage :** __To Get Empty Btpm List.__
 
-  »  **Perintah : **`{cmd}savebt` <nama_list>
-  »  **Kegunaan :** __Untuk Menyimpan List Btpm, Gunakan Nama Yang Berbeda.__
+   » **Command : **`{cmd}savebt` <list_name>
+   » **Usage :** __To Save Btpm List, Use Different Name.__
 
-  »  **Perintah : **$<nama_list>
-  »  **Kegunaan :** __Untuk Mendapatkan List Btpm Yang Tersimpan.__
+   » **Command : **$<list_name>
+   » **Usage :** __To Get List of Stored Btpm.__
 
-  »  **Perintah : **`{cmd}delbt` <nama_list>
-  »  **Kegunaan :** __Menghapus List Btpm Yang Tersimpan.__
+   » **Command : **`{cmd}delbt` <list_name>
+   » **Usage :** __Delete Saved Btpm List.__
 
-  »  **Perintah : **`{cmd}listbt` <nama_list>
-  »  **Kegunaan :** __Untuk Menlihat Semua List Btpm Yang Tersimpan.__
+   » **Command : **`{cmd}listbt` <list_name>
+   » **Usage :** __To View All Stored Btpm List.__
 """)
                 await event.edit(
                     text,
